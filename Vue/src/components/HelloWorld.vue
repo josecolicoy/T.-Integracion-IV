@@ -38,7 +38,16 @@
     </b-collapse>
   </b-navbar>
 </div>
-
+<!-- buscador -->
+  <div>
+    <!-- Styled -->
+    <b-form-file
+      v-model="file"
+      :state="Boolean(file)"
+      placeholder="Arrastrar un arquetipo o seleccionar"
+      drop-placeholder="Arrastrar aquí..."
+    ></b-form-file>
+  </div>
   </div>
 </template>
 
@@ -47,7 +56,13 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
-  }
+  },
+  data() {
+      return {
+        file: null,
+        file2: null
+      }
+    }
 }
 </script>
 
