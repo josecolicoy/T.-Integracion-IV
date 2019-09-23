@@ -1,15 +1,16 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <LandingPage />
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'mi-proyecto2'
+import LandingPage from './components/LandingPage.vue'
+export default {
+  name: 'app',
+  components: {
+    LandingPage
   }
+}
 </script>
-
-
-
 

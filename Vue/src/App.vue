@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <LandingPage />
+    <HelloWorld />
   </div>
 </template>
 
 <script>
-import LandingPage from './components/LandingPage.vue'
+import HelloWorld from './components/HelloWorld.vue'
 export default {
   name: 'app',
   components: {
-    LandingPage
+    HelloWorld
   }
 }
 </script>
