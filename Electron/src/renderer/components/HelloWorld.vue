@@ -1,20 +1,19 @@
 <template>
   <div >
     <b-navbar toggleable="md" type="dark" variant="info">
-      <b-navbar-brand :to="{name: 'home'}">Home</b-navbar-brand>
+      <b-navbar-brand ><router-link id="boton" to="/" class="text-decoration-none">Home</router-link> </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item :to="{name: 'arquetipo'}">Arquetipos</b-nav-item>
-          <b-nav-item :to="{name: 'cargar'}">Cargar</b-nav-item>
-          <b-nav-item :to="{name: 'descargar'}">Descargar</b-nav-item>
+          <b-nav-item ><router-link id="boton" to="/arquetipo" class="text-decoration-none">Arquetipos</router-link> </b-nav-item>
+          <b-nav-item ><router-link id="boton" to="/cargar" class="text-decoration-none">Cargar</router-link></b-nav-item>
+          <b-nav-item ><router-link id="boton" to="/descargar" class="text-decoration-none">Descargar</router-link></b-nav-item>
         </b-navbar-nav>
 
-        <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <b-nav-item :to="{name: 'about'}">About</b-nav-item>
+          <b-nav-item ><router-link id="boton" to="/about" class="text-decoration-none">About</router-link></b-nav-item>
           <b-nav-item-dropdown right>
             <!-- Using 'button-content' slot -->
             <template v-slot:button-content>
@@ -35,3 +34,9 @@ export default {
   name:'Helloworld'
 }
 </script>
+
+<style scoped>
+  #boton {
+      color: aliceblue;  
+    }
+</style>
