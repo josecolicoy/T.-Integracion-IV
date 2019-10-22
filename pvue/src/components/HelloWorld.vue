@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div>
     <b-navbar toggleable="md" type="dark" variant="info">
       <b-navbar-brand :to="{name: 'home'}">Home</b-navbar-brand>
 
